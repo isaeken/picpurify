@@ -1,0 +1,46 @@
+{
+    "name": "isaeken/picpurify",
+    "version": "0.1",
+    "description": "picpurify.com unofficial api",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "homepage": "https://github.com/isaeken/picpurify",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Isa Eken",
+            "email": "hello@isaeken.com.tr",
+            "homepage": "https://www.isaeken.com.tr",
+            "role": "Founder"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-fileinfo": "*",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/support": "^8.53"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "IsaEken\\Picpurify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IsaEken\\Picpurify\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

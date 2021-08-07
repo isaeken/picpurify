@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "porn_moderation": {
+    "porn_content": true,
+    "compute_time": 0.0709,
+    "confidence_score": 0.99067103862762
+  },
+  "confidence_score_decision": 0.99067103862762,
+  "nb_units": 2,
+  "task_call": "porn_moderation,gore_moderation",
+  "gore_moderation": {
+    "gore_content": false,
+    "compute_time": 0.0705,
+    "confidence_score": 0.99966239929199
+  },
+  "reject_criteria": [
+    "porn_moderation"
+  ],
+  "performed": [
+    "porn_moderation",
+    "gore_moderation"
+  ],
+  "sub_calls": [
+    "porn_moderation",
+    "gore_moderation"
+  ],
+  "final_decision": "KO",
+  "media": {
+    "url_image": "https://example.com/example.jpg",
+    "file_image": "",
+    "media_id": "000"
+  },
+  "units_consumed": 2,
+  "total_compute_time": 0.20959997177124
+}
